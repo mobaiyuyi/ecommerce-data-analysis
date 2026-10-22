@@ -1,19 +1,10 @@
-# ---- 大体积原始数据：体积大且可重新生成，不入库 ----
-# 复现时把 订单表.csv 放到 rfm-analysis/data/ 下（GBK 编码）
 rfm-analysis/data/订单表.csv
 rfm-analysis/data/订单表_clear.csv
-
-# ---- Jupyter / Python ----
 .ipynb_checkpoints/
 __pycache__/
 *.py[cod]
-
-# ---- 系统 / 编辑器 ----
 .DS_Store
 Thumbs.db
 .vscode/
 .idea/
-
-# ---- 用户行为原始数据：3.6GB，不入库 ----
 user-behavior-conversion/data/
-
