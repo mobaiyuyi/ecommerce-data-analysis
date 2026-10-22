@@ -17,7 +17,7 @@
 - 规模：约 1.0 亿行，98.8 万用户，450 万商品，9,405 个类目
 - 字段：`user_id`、`item_id`、`category_id`、`behavior_type`、`timestamp`
 - 行为：`pv`、`buy`、`cart`、`fav`
-- 原始 CSV 约 3.6GB，没有入库；复现时放到 `data/UserBehavior.csv`
+- 原始 CSV 约 3.6GB
 
 ## 分析链路
 
