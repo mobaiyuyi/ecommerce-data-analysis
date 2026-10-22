@@ -61,14 +61,6 @@
 - `sql/`：建表、校验、新客、RFM、沉睡用户查询
 - `py/`：数据清洗、EDA、MySQL 入库、指标运行脚本
 
-## 复现
-
-- 下载 `订单表.csv`，放到 `data/`，GBK 编码
-- 跑 `py/data_cleaning.ipynb`，生成 `data/订单表_clear.csv`
-- 跑 `py/load_to_mysql.py`，把清洗结果写入 MySQL
-- 跑 `py/run_metrics.py`，执行 `sql/` 并把结果写到 `data/metrics/`
-- 打开 `rfm-user-segmentation/rfm-user-segmentation.html` 看报表
-- notebooks 里是作者本机绝对路径 `D:/JupyterNoteBook/portfolio/Project2/...`，复现前改成自己的路径
 
 ## 目录
 
@@ -81,9 +73,4 @@ rfm-analysis/
 └─ sql/                     建表、校验、新客、RFM、沉睡用户 SQL
 ```
 
-## 已知限制
 
-- 数据从 2024-01 开始，存在左截断，2024 年用户天然都是新客；分层统一用近 12 个月窗口规避
-- 数据是多平台店铺订单，不是京东单一平台；平台差异只做拆分，不做因果判断
-- R、F、M 阈值取窗口中位数，换数据要重算，不能直接套 160 天和 207 元
-- HTML 报表是静态文件，图表依赖同级 `_shared` 和 `assets` 目录
