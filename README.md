@@ -27,7 +27,7 @@ ecommerce-data-analysis/
 
 ## 技术栈
 
-Hive SQL、MySQL、Python（pandas）、FineBI、ECharts、Git。
+Hive SQL、ClickHouse、MySQL、Python（pandas）、FineBI、ECharts、Git。
 
 
 
